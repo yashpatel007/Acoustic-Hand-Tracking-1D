@@ -12,3 +12,4 @@ Please see the video below for demo.
 [![Watch the video](https://i9.ytimg.com/vi/SZwWNfUYIhY/mq3.jpg?sqp=CKThkucF&rs=AOn4CLB0VwJc5nAOTFFil9LavdFagIYiZQ)](https://youtu.be/SZwWNfUYIhY)
 
 sensor data
+![Screen Shot](ss/ss1.png)
