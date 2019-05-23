@@ -171,7 +171,7 @@ ImageView ball;
                     // double posz = HauoliTracker.getPosZ();
                     int gesture = HauoliTracker.getGesture();
                     // status =6 means it is tracking// posy is same as dist[0] just negetive
-                    b.dx = (int) (abs(dists[0])-init_val);// we can change the speed of movement here 
+                    b.dx = 2*(int) (abs(dists[0])-init_val);// we can change the speed of movement here 
                     Log.d("Hauoli", "est dist = " + dists[0] +" Y: "+posy+ " gesture : "+ gesture +" status:"+ status+" dx : "+b.dx);
 
                     try {
