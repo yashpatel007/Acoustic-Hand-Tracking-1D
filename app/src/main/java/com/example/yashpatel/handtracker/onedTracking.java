@@ -157,6 +157,8 @@ ImageView ball;
             HauoliTracker.enableGesture(false);
             double[] dists = new double[nMic];
             HauoliTracker.start();
+            HauoliTracker.getDists(dists);// gets the initial value of sensor  to improve accuracy
+            int init_val= (int) dists[0];// store the initial sensor data to init_val
             //============================ end : so sad(haha) ======================================//
             while (playing)
             {
@@ -169,7 +171,7 @@ ImageView ball;
                     // double posz = HauoliTracker.getPosZ();
                     int gesture = HauoliTracker.getGesture();
                     // status =6 means it is tracking// posy is same as dist[0] just negetive
-                    b.dx = (int) (abs(dists[0])-101);
+                    b.dx = (int) (abs(dists[0])-init_val);// we can change the speed of movement here 
                     Log.d("Hauoli", "est dist = " + dists[0] +" Y: "+posy+ " gesture : "+ gesture +" status:"+ status+" dx : "+b.dx);
 
                     try {
